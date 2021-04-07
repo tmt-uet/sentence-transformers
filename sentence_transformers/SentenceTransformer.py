@@ -65,7 +65,7 @@ class SentenceTransformer(nn.Sequential):
                     cache_folder = os.path.join(torch_cache_home, 'sentence_transformers')
 
                 #model_path = os.path.join(cache_folder, folder_name)
-                model_path = "../input/model-embedding"
+                model_path = "../input/model-embedding-2"
                 if not os.path.exists(model_path) or not os.listdir(model_path):
                     if os.path.exists(model_path):
                         os.remove(model_path)
